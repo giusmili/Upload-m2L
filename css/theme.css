@@ -1,0 +1,79 @@
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+li figure img{
+    display: inline-block;
+    width: 100%;
+    object-fit: cover;
+}
+li figure{
+    margin: 0;
+    
+}
+
+header h1{
+    line-height: 6.5rem;
+    text-align: center;
+    background-color: #222;
+    color: #fff;
+    padding: 1rem 0;
+}
+section, fieldset{
+    max-width: 90rem;
+    margin: 5rem auto;
+}
+fieldset legend{
+    font-size: 3.5rem;
+    font-weight: normal;
+}
+/* On cache l'input 😢 */
+input[type=file] {
+    display: none;
+    
+}
+label[for="photo"]{
+    cursor: pointer;
+}
+.message-primary{
+    
+}
+.message-type{
+    text-align: center;
+    color: #fff;
+    line-height: 3.5rem;
+    background-color: #0984e3;
+    border-radius: .4rem;
+
+}
+
+.material-symbols-outlined {
+vertical-align: -.4rem;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+header h1 .material-symbols-outlined{
+    font-size: inherit;
+}
+.picture{
+    max-width: 40rem;
+    margin: 0 auto;
+}
+  
+  /* On créé un bouton en ciblant un élément dans la balise label */
+  /* label em {
+    padding: 8px 12px;
+    background: #084cdf;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  label span:hover {
+    background: #0d45a5;
+  }
+   */

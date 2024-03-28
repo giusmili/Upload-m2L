@@ -1,0 +1,9 @@
+CREATE TABLE membres (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nom VARCHAR(255) NOT NULL,
+    prenom VARCHAR(255) NOT NULL,
+    date_naissance DATE NOT NULL,
+    ville VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    photo VARCHAR(255) NOT NULL
+);
