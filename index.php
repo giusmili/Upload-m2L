@@ -46,8 +46,8 @@
                   
                   <?php
                       
-                      include_once __DIR__ ."/controller/controller.class.php";
-                      include_once __DIR__ ."/controller/config.php";
+                    include_once __DIR__ ."/controller/controller.class.php";
+                    include_once __DIR__ ."/controller/config.php";
                         // Déplacer la photo téléchargée vers un dossier (assurez-vous que le dossier "uploads" existe)
                       move_uploaded_file($photoTmpName, $photoDestination);
       
@@ -67,8 +67,8 @@
                             'photo' => $photoDestination,
                         ];
                       // Rediriger l'utilisateur après l'inscription réussie
-                      header("Location: confirmation.php?prenom=" . urlencode($prenom));
-                      exit();
+                    header("Location: confirmation.php?prenom=" . urlencode($prenom));
+                    exit();
                       # suite du code
                       // Récupérer les données du formulaire
                       ?>
