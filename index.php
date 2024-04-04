@@ -72,7 +72,7 @@
                       # suite du code
                       // Récupérer les données du formulaire
                       ?>
-                      
+                       
                 </p>
             
         </fieldset>
