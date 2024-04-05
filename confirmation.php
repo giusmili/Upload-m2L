@@ -17,19 +17,19 @@
             <section  class="message-primary">
           
             <?php
-        // Démarrer la session
+        # Démarrer la session
         session_start();
-        // Récupérer le prénom depuis l'URL
+        # Récupérer le prénom depuis l'URL et tester la valeur, si la valeur n'est pas définie par défaut sera null
         $prenom = $_GET['prenom'] ?? '';
 
-        // Afficher le prénom dans le contenu HTML
+       # Afficher le prénom dans le contenu HTML
         if (!empty($prenom)) {
             echo "<p class=\"message-type\">Merci, $prenom, de vous être inscrit. Votre formulaire a été soumis avec succès.</p>";
 
-            // Récupérer les données du membre depuis la session
+            # Récupérer les données du membre depuis la session
             $newUser = $_SESSION['membre'] ?? null;
 
-            // Afficher les données du membre
+            # Afficher les données du membre
             if ($newUser) {
                 echo "<h2>Vous êtes le nouveau membre :</h2>
                 <ul>
@@ -54,7 +54,7 @@
             echo "<p>Merci de vous être inscrit. Votre formulaire a été soumis avec succès.</p>";
         }
 
-        // Détruire la session après utilisation
+  
         session_destroy();
     ?>
 
